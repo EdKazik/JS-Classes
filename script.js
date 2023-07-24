@@ -1,7 +1,6 @@
 class superMath {
     constructor() {
     }
-
     input() {
         const promptX = prompt('Enter number');
         const promptY = prompt(`Enter second number`)
