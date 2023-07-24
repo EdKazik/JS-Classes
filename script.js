@@ -18,10 +18,10 @@ class superMath {
             alert(`${promptX} ${promptMath} ${promptY} = ${promptX-promptY}`)
             return;
         } else if (promptMath === '+') {
-            const promptXNumber = Number(promptX);
-            const promptYNumber = Number(promptY);
-            alert(`${promptXNumber} ${promptMath} ${promptYNumber} = ${promptXNumber+promptYNumber}`)
-            console.log(typeof promptXNumber, `${promptXNumber+promptYNumber}`)
+            // const promptXNumber = Number(promptX);
+            // const promptYNumber = Number(promptY);
+            alert(`${+promptX} ${promptMath} ${+promptY} = ${+promptX + +promptY}`)
+            console.log(typeof promptXNumber, `${+promptX + +promptY}`)
             return;
         }  else {
             alert('Incorrect data')
