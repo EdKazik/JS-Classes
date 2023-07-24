@@ -18,11 +18,9 @@ class superMath {
             return;
         } else if (promptMath === '+') {
             alert(`${+promptX} ${promptMath} ${+promptY} = ${+promptX + +promptY}`)
-            console.log(typeof promptXNumber, `${+promptX + +promptY}`)
             return;
         }  else {
             alert('Incorrect data')
-            console.log(`${promptMath}`, typeof promptMath)
         } 
     }
 
@@ -30,7 +28,6 @@ class superMath {
         const check = confirm(`Want do this? ${obj.x} ${obj.znak} ${obj.y}`);
         if (check === true) {
             alert(`${obj.x} / ${obj.y} = ${obj.x / obj.y}`);
-            console.log(`${check} check`);
         } else {
             newQuantity.input();
         }
