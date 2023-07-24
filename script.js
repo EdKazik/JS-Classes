@@ -1,6 +1,5 @@
 class superMath {
     constructor() {
-
     }
 
     input() {
@@ -18,8 +17,6 @@ class superMath {
             alert(`${promptX} ${promptMath} ${promptY} = ${promptX-promptY}`)
             return;
         } else if (promptMath === '+') {
-            // const promptXNumber = Number(promptX);
-            // const promptYNumber = Number(promptY);
             alert(`${+promptX} ${promptMath} ${+promptY} = ${+promptX + +promptY}`)
             console.log(typeof promptXNumber, `${+promptX + +promptY}`)
             return;
@@ -27,19 +24,17 @@ class superMath {
             alert('Incorrect data')
             console.log(`${promptMath}`, typeof promptMath)
         } 
-        
     }
 
     check(obj) {
         const check = confirm(`Want do this? ${obj.x} ${obj.znak} ${obj.y}`);
         if (check === true) {
-            alert(`${obj.x} / ${obj.y} = ${obj.x/obj.y}`)
-            console.log(`${check} check`)
-
+            alert(`${obj.x} / ${obj.y} = ${obj.x / obj.y}`);
+            console.log(`${check} check`);
         } else {
-            newQuantity.input()
+            newQuantity.input();
         }
-        return `${obj.x} ${obj.znak} ${obj.y}`
+        return `${obj.x} ${obj.znak} ${obj.y}`;
     }
 }
 
