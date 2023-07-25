@@ -34,9 +34,9 @@ class superMath {
     }
 }
 
-const obj = {x: 12, y: 3, znak: '/'}
+const obj = { x: 12, y: 3, znak: '/' };
 const newQuantity = new superMath();
-newQuantity.check(obj)
+newQuantity.check(obj);
 
 
 
