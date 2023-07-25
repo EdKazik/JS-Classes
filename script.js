@@ -25,7 +25,7 @@ class superMath {
 
     check(obj) {
         const check = confirm(`Want do this? ${obj.x} ${obj.znak} ${obj.y}`);
-        if (check === true) {
+        if (check) {
             alert(`${obj.x} / ${obj.y} = ${obj.x / obj.y}`);
         } else {
             newQuantity.input();
